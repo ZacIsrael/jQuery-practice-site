@@ -68,3 +68,29 @@ $(document).on("keydown", function(event) {
     // set the h1 element's/elements' text to the key that was pressed
     $("h1").text(`${event.key}`);
 });
+
+// Adding & removing elements with jQuery
+// before, after, prepend, & append
+
+/*
+.animate() Function in jQuery:
+- The .animate() function in jQuery allows you to create custom animations 
+by modifying CSS properties over a period of time.
+
+$(selector).animate({ properties }, duration, easing, complete);
+selector – The element to animate
+
+- properties – The CSS properties to animate (e.g., width, height, opacity)
+- duration (optional) – Time in milliseconds (default: 400ms) or keywords like "slow", "fast"
+- easing (optional) – Controls animation speed ("swing" or "linear")
+- complete (optional) – A callback function that runs after the animation finishes
+
+ This increases the width of .box to 300px and reduces opacity to 50% over 1 second.
+$(".box").animate({
+    width: "300px",
+    opacity: 0.5
+}, 1000);
+
+
+
+*/
