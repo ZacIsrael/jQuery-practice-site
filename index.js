@@ -45,3 +45,26 @@ $("a").attr("href", "https://www.linkedin.com/feed/");
 
 // retrieves all of the h1 elements' classes 
 $("h1").attr("class")
+
+// Event Listeners 
+$("h1").on("click", function(){
+    // changes an h1 element's color once it has been clicked 
+    $("h1").css("color", "purple")
+});
+
+$("button").on("click", function() {
+    // changes the color of the h1 elements once a button has been clicked
+    $("h1").css("color", "green")
+})
+
+$("input").on("keydown", function(event){
+    // execute the following code when the end user types in any of the input elements
+    console.log('event.key = ', event.key);
+})
+
+// whenever a key is pressed
+$(document).on("keydown", function(event) {
+
+    // set the h1 element's/elements' text to the key that was pressed
+    $("h1").text(`${event.key}`);
+});
