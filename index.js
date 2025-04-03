@@ -16,7 +16,7 @@
 // $("h1").addClass("big-title");
 
 // adds multiple classes to the h1 element(s)
-$("h1").addClass("big-title margin-50");
+// $("h1").addClass("big-title margin-50");
 
 // removes a class from the h1 element(s)
 // $("h1").removeClass("big-title");
@@ -27,3 +27,12 @@ $("h1").hasClass("margin-50");
 
 // selects all of the html buttons
 $("button");
+
+// Changes the text of the h1 element(s)
+$("h1").text("Bye");
+
+// changes the text on all of the html buttons
+// $("button").text("Don't Click Me.");
+
+// changes & italicizes the text on all of the html buttons 
+$("button").html("<em>Hey</em>");
