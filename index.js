@@ -36,3 +36,12 @@ $("h1").text("Bye");
 
 // changes & italicizes the text on all of the html buttons 
 $("button").html("<em>Hey</em>");
+
+// retrieves the links stored in the a element(s)
+$("a").attr("href");
+
+// sets the values of the links stored in the a elements(s)
+$("a").attr("href", "https://www.linkedin.com/feed/");
+
+// retrieves all of the h1 elements' classes 
+$("h1").attr("class")
